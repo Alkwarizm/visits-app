@@ -40,5 +40,4 @@ services:
       - .:/app
     command: ["pytest", "-v", "--disable-warnings"]
     depends_on:
-      - app
       - redis-server

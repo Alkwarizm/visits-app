@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t visits_app .
+  - docker build -t frontend_app ./frontend
+  - docker build -t visits_tests .
+
+script:
+  - docker run -e CI=true --name visits_tests visits_tests python -m pytest -v --disable-warnings
