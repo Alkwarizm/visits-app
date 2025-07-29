@@ -6,4 +6,4 @@ before_install:
   - docker build -t visits_tests .
 
 script:
-  - docker run visits_tests pytest
+  - docker run visits_tests pytest -v --disable-warnings
