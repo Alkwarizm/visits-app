@@ -3,9 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t visits_app .
-  - docker build -t frontend_app ./frontend
   - docker build -t visits_tests .
 
 script:
-  - docker run visits_tests pytest -v --disable-warnings
+  - docker run visits_tests pytest
