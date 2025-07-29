@@ -3,6 +3,8 @@ from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 from starlette.requests import Request
 
+from config import get_settings
+
 
 def create_application() -> FastAPI:
     app = FastAPI(title="FastAPI Application")
@@ -16,7 +18,7 @@ def create_application() -> FastAPI:
     return app
 
 app = create_application()
-redis_client = redis.Redis(host='redis-server', port=6379, db=0)
+redis_client = redis.Redis(host=get_settings().REDIS_HOST, port=6379, db=0)
 @app.get("/")
 async def read_root(request: Request):
     ip = request.client.host

@@ -1,9 +1,10 @@
 sudo: required
 services:
   - docker
+  - redis-server
 
 before_install:
   - docker build -t visits_tests .
 
 script:
-  - docker run visits_tests pytest -v --disable-warnings
+  - docker run -e REDIS_HOST=localhost visits_tests pytest -v --disable-warnings
