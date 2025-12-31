@@ -11,6 +11,7 @@ Requirements:
   - [docker-compose](https://docs.docker.com/compose/)
   - [make](https://www.gnu.org/software/make/manual/html_node/Introduction.html)
 
-## Build Snapshot
+## Snapshot
+[![visits-app-home](./docs/img_2.png)](https://alkwarizm.github.io/visits-app/)
 [![visits-app-snapshot](./docs/img.png)](https://alkwarizm.github.io/visits-app/)
 [![visits-app-github-snapshot](./docs/img_1.png)](https://alkwarizm.github.io/visits-app/)
