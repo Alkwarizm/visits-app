@@ -10,3 +10,6 @@ Requirements:
   - [docker](https://www.docker.com/)
   - [docker-compose](https://docs.docker.com/compose/)
   - [make](https://www.gnu.org/software/make/manual/html_node/Introduction.html)
+
+## Snapshot
+[![visits-app-snapshot](./docs/snapshot.png)](https://alkwarizm.github.io/visits-app/)
